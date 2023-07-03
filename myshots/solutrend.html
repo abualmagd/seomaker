@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+
+<head>
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-R94CGCMVC4"></script>
+  <script>function gtag() { dataLayer.push(arguments) } window.dataLayer = window.dataLayer || [], gtag("js", new Date), gtag("config", "G-R94CGCMVC4")</script>
+  <meta charset="utf-8">
+  <style type="text/css">
+    :root,
+    :host {
+      --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Solid";
+      --fa-font-regular: normal 400 1em/1 "Font Awesome 6 Regular";
+      --fa-font-light: normal 300 1em/1 "Font Awesome 6 Light";
+      --fa-font-thin: normal 100 1em/1 "Font Awesome 6 Thin";
+      --fa-font-duotone: normal 900 1em/1 "Font Awesome 6 Duotone";
+      --fa-font-sharp-solid: normal 900 1em/1 "Font Awesome 6 Sharp";
+      --fa-font-sharp-regular: normal 400 1em/1 "Font Awesome 6 Sharp";
+      --fa-font-sharp-light: normal 300 1em/1 "Font Awesome 6 Sharp";
+      --fa-font-brands: normal 400 1em/1 "Font Awesome 6 Brands";
+    }
+
+    svg:not(:root).svg-inline--fa,
+    svg:not(:host).svg-inline--fa {
+      overflow: visible;
+      box-sizing: content-box;
+    }
+
+    .svg-inline--fa {
+      display: var(--fa-display, inline-block);
+      height: 1em;
+      overflow: visible;
+      vertical-align: -0.125em;
+    }
+
+    .svg-inline--fa.fa-2xs {
+      vertical-align: 0.1em;
+    }
+
+    .svg-inline--fa.fa-xs {
+      vertical-align: 0em;
+    }
+
+    .svg-inline--fa.fa-sm {
+      vertical-align: -0.0714285705em;
+    }
+
+    .svg-inline--fa.fa-lg {
+      vertical-align: -0.2em;
+    }
+
+    .svg-inline--fa.fa-xl {
+      vertical-align: -0.25em;
+    }
+
+    .svg-inline--fa.fa-2xl {
+      vertical-align: -0.3125em;
+    }
+
+    .svg-inline--fa.fa-pull-left {
+      margin-right: var(--fa-pull-margin, 0.3em);
+      width: auto;
+    }
+
+    .svg-inline--fa.fa-pull-right {
+      margin-left: var(--fa-pull-margin, 0.3em);
+      width: auto;
+    }
+
+    .svg-inline--fa.fa-li {
+      width: var(--fa-li-width, 2em);
+      top: 0.25em;
+    }
+
+    .svg-inline--fa.fa-fw {
+      width: var(--fa-fw-width, 1.25em);
+    }
+
+    .fa-layers svg.svg-inline--fa {
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    .fa-layers-counter,
+    .fa-layers-text {
+      display: inline-block;
+      position: absolute;
+      text-align: center;
+    }
+
+    .fa-layers {
+      display: inline-block;
+      height: 1em;
+      position: relative;
+      text-align: center;
+      vertical-align: -0.125em;
+      width: 1em;
+    }
+
+    .fa-layers svg.svg-inline--fa {
+      -webkit-transform-origin: center center;
+      transform-origin: center center;
+    }
+
+    .fa-layers-text {
+      left: 50%;
+      top: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      -webkit-transform-origin: center center;
+      transform-origin: center center;
+    }
+
+    .fa-layers-counter {
+      background-color: var(--fa-counter-background-color, #ff253a);
+      border-radius: var(--fa-counter-border-radius, 1em);
+      box-sizing: border-box;
+      color: var(--fa-inverse, #fff);
+      line-height: var(--fa-counter-line-height, 1);
+      max-width: var(--fa-counter-max-width, 5em);
+      min-width: var(--fa-counter-min-width, 1.5em);
+      overflow: hidden;
+      padding: var(--fa-counter-padding, 0.25em 0.5em);
+      right: var(--fa-right, 0);
+      text-overflow: ellipsis;
+      top: var(--fa-top, 0);
+      -webkit-transform: scale(var(--fa-counter-scale, 0.25));
+      transform: scale(var(--fa-counter-scale, 0.25));
+      -webkit-transform-origin: top right;
+      transform-origin: top right;
+    }
+
+    .fa-layers-bottom-right {
+      bottom: var(--fa-bottom, 0);
+      right: var(--fa-right, 0);
+      top: auto;
+      -webkit-transform: scale(var(--fa-layers-scale, 0.25));
+      transform: scale(var(--fa-layers-scale, 0.25));
+      -webkit-transform-origin: bottom right;
+      transform-origin: bottom right;
+    }
+
+    .fa-layers-bottom-left {
+      bottom: var(--fa-bottom, 0);
+      left: var(--fa-left, 0);
+      right: auto;
+      top: auto;
+      -webkit-transform: scale(var(--fa-layers-scale, 0.25));
+      transform: scale(var(--fa-layers-scale, 0.25));
+      -webkit-transform-origin: bottom left;
+      transform-origin: bottom left;
+    }
+
+    .fa-layers-top-right {
+      top: var(--fa-top, 0);
+      right: var(--fa-right, 0);
+      -webkit-transform: scale(var(--fa-layers-scale, 0.25));
+      transform: scale(var(--fa-layers-scale, 0.25));
+      -webkit-transform-origin: top right;
+      transform-origin: top right;
+    }
+
+    .fa-layers-top-left {
+      left: var(--fa-left, 0);
+      right: auto;
+      top: var(--fa-top, 0);
+      -webkit-transform: scale(var(--fa-layers-scale, 0.25));
+      transform: scale(var(--fa-layers-scale, 0.25));
+      -webkit-transform-origin: top left;
+      transform-origin: top left;
+    }
+
+    .fa-1x {
+      font-size: 1em;
+    }
+
+    .fa-2x {
+      font-size: 2em;
+    }
+
+    .fa-3x {
+      font-size: 3em;
+    }
+
+    .fa-4x {
+      font-size: 4em;
+    }
+
+    .fa-5x {
+      font-size: 5em;
+    }
+
+    .fa-6x {
+      font-size: 6em;
+    }
+
+    .fa-7x {
+      font-size: 7em;
+    }
+
+    .fa-8x {
+      font-size: 8em;
+    }
+
+    .fa-9x {
+      font-size: 9em;
+    }
+
+    .fa-10x {
+      font-size: 10em;
+    }
+
+    .fa-2xs {
+      font-size: 0.625em;
+      line-height: 0.1em;
+      vertical-align: 0.225em;
+    }
+
+    .fa-xs {
+      font-size: 0.75em;
+      line-height: 0.0833333337em;
+      vertical-align: 0.125em;
+    }
+
+    .fa-sm {
+      font-size: 0.875em;
+      line-height: 0.0714285718em;
+      vertical-align: 0.0535714295em;
+    }
+
+    .fa-lg {
+      font-size: 1.25em;
+      line-height: 0.05em;
+      vertical-align: -0.075em;
+    }
+
+    .fa-xl {
+      font-size: 1.5em;
+      line-height: 0.0416666682em;
+      vertical-align: -0.125em;
+    }
+
+    .fa-2xl {
+      font-size: 2em;
+      line-height: 0.03125em;
+      vertical-align: -0.1875em;
+    }
+
+    .fa-fw {
+      text-align: center;
+      width: 1.25em;
+    }
+
+    .fa-ul {
+      list-style-type: none;
+      margin-left: var(--fa-li-margin, 2.5em);
+      padding-left: 0;
+    }
+
+    .fa-ul>li {
+      position: relative;
+    }
+
+    .fa-li {
+      left: calc(var(--fa-li-width, 2em) * -1);
+      position: absolute;
+      text-align: center;
+      width: var(--fa-li-width, 2em);
+      line-height: inherit;
+    }
+
+    .fa-border {
+      border-color: var(--fa-border-color, #eee);
+      border-radius: var(--fa-border-radius, 0.1em);
+      border-style: var(--fa-border-style, solid);
+      border-width: var(--fa-border-width, 0.08em);
+      padding: var(--fa-border-padding, 0.2em 0.25em 0.15em);
+    }
+
+    .fa-pull-left {
+      float: left;
+      margin-right: var(--fa-pull-margin, 0.3em);
+    }
+
+    .fa-pull-right {
+      float: right;
+      margin-left: var(--fa-pull-margin, 0.3em);
+    }
+
+    .fa-beat {
+      -webkit-animation-name: fa-beat;
+      animation-name: fa-beat;
+      -webkit-animation-delay: var(--fa-animation-delay, 0s);
+      animation-delay: var(--fa-animation-delay, 0s);
+      -webkit-animation-direction: var(--fa-animation-direction, normal);
+      animation-direction: var(--fa-animation-direction, normal);
+      -webkit-animation-duration: var(--fa-animation-duration, 1s);
+      animation-duration: var(--fa-animation-duration, 1s);
+      -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+      animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+      -webkit-animation-timing-function: var(--fa-animation-timing, ease-in-out);
+      animation-timing-function: var(--fa-animation-timing, ease-in-out);
+    }
+
+    .fa-bounce {
+      -webkit-animation-name: fa-bounce;
+      animation-name: fa-bounce;
+      -webkit-animation-delay: var(--fa-animation-delay, 0s);
+      animation-delay: var(--fa-animation-delay, 0s);
+      -webkit-animation-direction: var(--fa-animation-direction, normal);
+      animation-direction: var(--fa-animation-direction, normal);
+      -webkit-animation-duration: var(--fa-animation-duration, 1s);
+      animation-duration: var(--fa-animation-duration, 1s);
+      -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+      animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+      -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.28, 0.84, 0.42, 1));
+      animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.28, 0.84, 0.42, 1));
+    }
+
+    .fa-fade {
+      -webkit-animation-name: fa-fade;
+      animation-name: fa-fade;
+      -webkit-animation-delay: var(--fa-animation-delay, 0s);
+      animation-delay: var(--fa-animation-delay, 0s);
+      -webkit-animation-direction: var(--fa-animation-direction, normal);
+      animation-direction: var(--fa-animation-direction, normal);
+      -webkit-animation-duration: var(--fa-animation-duration, 1s);
+      animation-duration: var(--fa-animation-duration, 1s);
+      -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+      animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+      -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+      animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+    }
+
+    .fa-beat-fade {
+      -webkit-animation-name: fa-beat-fade;
+      animation-name: fa-beat-fade;
+      -webkit-animation-delay: var(--fa-animation-delay, 0s);
+      animation-delay: var(--fa-animation-delay, 0s);
+      -webkit-animation-direction: var(--fa-animation-direction, normal);
+      animation-direction: var(--fa-animation-direction, normal);
+      -webkit-animation-duration: var(--fa-animation-duration, 1s);
+      animation-duration: var(--fa-animation-duration, 1s);
+      -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+      animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+      -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+      animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+    }
+
+    .fa-flip {
+      -webkit-animation-name: fa-flip;
+      animation-name: fa-flip;
+      -webkit-animation-delay: var(--fa-animation-delay, 0s);
+      animation-delay: var(--fa-animation-delay, 0s);
+      -webkit-animation-direction: var(--fa-animation-direction, normal);
+      animation-direction: var(--fa-animation-direction, normal);
+      -webkit-animation-duration: var(--fa-animation-duration, 1s);
+      animation-duration: var(--fa-animation-duration, 1s);
+      -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+      animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+      -webkit-animation-timing-function: var(--fa-animation-timing, ease-in-out);
+      animation-timing-function: var(--fa-animation-timing, ease-in-out);
+    }
+
+    .fa-shake {
+      -webkit-animation-name: fa-shake;
+      animation-name: fa-shake;
+      -webkit-animation-delay: var(--fa-animation-delay, 0s);
+      animation-delay: var(--fa-animation-delay, 0s);
+      -webkit-animation-direction: var(--fa-animation-direction, normal);
+      animation-direction: var(--fa-animation-direction, normal);
+      -webkit-animation-duration: var(--fa-animation-duration, 1s);
+      animation-duration: var(--fa-animation-duration, 1s);
+      -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+      animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+      -webkit-animation-timing-function: var(--fa-animation-timing, linear);
+      animation-timing-function: var(--fa-animation-timing, linear);
+    }
+
+    .fa-spin {
+      -webkit-animation-name: fa-spin;
+      animation-name: fa-spin;
+      -webkit-animation-delay: var(--fa-animation-delay, 0s);
+      animation-delay: var(--fa-animation-delay, 0s);
+      -webkit-animation-direction: var(--fa-animation-direction, normal);
+      animation-direction: var(--fa-animation-direction, normal);
+      -webkit-animation-duration: var(--fa-animation-duration, 2s);
+      animation-duration: var(--fa-animation-duration, 2s);
+      -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+      animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+      -webkit-animation-timing-function: var(--fa-animation-timing, linear);
+      animation-timing-function: var(--fa-animation-timing, linear);
+    }
+
+    .fa-spin-reverse {
+      --fa-animation-direction: reverse;
+    }
+
+    .fa-pulse,
+    .fa-spin-pulse {
+      -webkit-animation-name: fa-spin;
+      animation-name: fa-spin;
+      -webkit-animation-direction: var(--fa-animation-direction, normal);
+      animation-direction: var(--fa-animation-direction, normal);
+      -webkit-animation-duration: var(--fa-animation-duration, 1s);
+      animation-duration: var(--fa-animation-duration, 1s);
+      -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+      animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+      -webkit-animation-timing-function: var(--fa-animation-timing, steps(8));
+      animation-timing-function: var(--fa-animation-timing, steps(8));
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+
+      .fa-beat,
+      .fa-bounce,
+      .fa-fade,
+      .fa-beat-fade,
+      .fa-flip,
+      .fa-pulse,
+      .fa-shake,
+      .fa-spin,
+      .fa-spin-pulse {
+        -webkit-animation-delay: -1ms;
+        animation-delay: -1ms;
+        -webkit-animation-duration: 1ms;
+        animation-duration: 1ms;
+        -webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1;
+        -webkit-transition-delay: 0s;
+        transition-delay: 0s;
+        -webkit-transition-duration: 0s;
+        transition-duration: 0s;
+      }
+    }
+
+    @-webkit-keyframes fa-beat {
+
+      0%,
+      90% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+      }
+
+      45% {
+        -webkit-transform: scale(var(--fa-beat-scale, 1.25));
+        transform: scale(var(--fa-beat-scale, 1.25));
+      }
+    }
+
+    @keyframes fa-beat {
+
+      0%,
+      90% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+      }
+
+      45% {
+        -webkit-transform: scale(var(--fa-beat-scale, 1.25));
+        transform: scale(var(--fa-beat-scale, 1.25));
+      }
+    }
+
+    @-webkit-keyframes fa-bounce {
+      0% {
+        -webkit-transform: scale(1, 1) translateY(0);
+        transform: scale(1, 1) translateY(0);
+      }
+
+      10% {
+        -webkit-transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+        transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+      }
+
+      30% {
+        -webkit-transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+        transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+      }
+
+      50% {
+        -webkit-transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+        transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+      }
+
+      57% {
+        -webkit-transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+        transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+      }
+
+      64% {
+        -webkit-transform: scale(1, 1) translateY(0);
+        transform: scale(1, 1) translateY(0);
+      }
+
+      100% {
+        -webkit-transform: scale(1, 1) translateY(0);
+        transform: scale(1, 1) translateY(0);
+      }
+    }
+
+    @keyframes fa-bounce {
+      0% {
+        -webkit-transform: scale(1, 1) translateY(0);
+        transform: scale(1, 1) translateY(0);
+      }
+
+      10% {
+        -webkit-transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+        transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+      }
+
+      30% {
+        -webkit-transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+        transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+      }
+
+      50% {
+        -webkit-transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+        transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+      }
+
+      57% {
+        -webkit-transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+        transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+      }
+
+      64% {
+        -webkit-transform: scale(1, 1) translateY(0);
+        transform: scale(1, 1) translateY(0);
+      }
+
+      100% {
+        -webkit-transform: scale(1, 1) translateY(0);
+        transform: scale(1, 1) translateY(0);
+      }
+    }
+
+    @-webkit-keyframes fa-fade {
+      50% {
+        opacity: var(--fa-fade-opacity, 0.4);
+      }
+    }
+
+    @keyframes fa-fade {
+      50% {
+        opacity: var(--fa-fade-opacity, 0.4);
+      }
+    }
+
+    @-webkit-keyframes fa-beat-fade {
+
+      0%,
+      100% {
+        opacity: var(--fa-beat-fade-opacity, 0.4);
+        -webkit-transform: scale(1);
+        transform: scale(1);
+      }
+
+      50% {
+        opacity: 1;
+        -webkit-transform: scale(var(--fa-beat-fade-scale, 1.125));
+        transform: scale(var(--fa-beat-fade-scale, 1.125));
+      }
+    }
+
+    @keyframes fa-beat-fade {
+
+      0%,
+      100% {
+        opacity: var(--fa-beat-fade-opacity, 0.4);
+        -webkit-transform: scale(1);
+        transform: scale(1);
+      }
+
+      50% {
+        opacity: 1;
+        -webkit-transform: scale(var(--fa-beat-fade-scale, 1.125));
+        transform: scale(var(--fa-beat-fade-scale, 1.125));
+      }
+    }
+
+    @-webkit-keyframes fa-flip {
+      50% {
+        -webkit-transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+        transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+      }
+    }
+
+    @keyframes fa-flip {
+      50% {
+        -webkit-transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+        transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+      }
+    }
+
+    @-webkit-keyframes fa-shake {
+      0% {
+        -webkit-transform: rotate(-15deg);
+        transform: rotate(-15deg);
+      }
+
+      4% {
+        -webkit-transform: rotate(15deg);
+        transform: rotate(15deg);
+      }
+
+      8%,
+      24% {
+        -webkit-transform: rotate(-18deg);
+        transform: rotate(-18deg);
+      }
+
+      12%,
+      28% {
+        -webkit-transform: rotate(18deg);
+        transform: rotate(18deg);
+      }
+
+      16% {
+        -webkit-transform: rotate(-22deg);
+        transform: rotate(-22deg);
+      }
+
+      20% {
+        -webkit-transform: rotate(22deg);
+        transform: rotate(22deg);
+      }
+
+      32% {
+        -webkit-transform: rotate(-12deg);
+        transform: rotate(-12deg);
+      }
+
+      36% {
+        -webkit-transform: rotate(12deg);
+        transform: rotate(12deg);
+      }
+
+      40%,
+      100% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+    }
+
+    @keyframes fa-shake {
+      0% {
+        -webkit-transform: rotate(-15deg);
+        transform: rotate(-15deg);
+      }
+
+      4% {
+        -webkit-transform: rotate(15deg);
+        transform: rotate(15deg);
+      }
+
+      8%,
+      24% {
+        -webkit-transform: rotate(-18deg);
+        transform: rotate(-18deg);
+      }
+
+      12%,
+      28% {
+        -webkit-transform: rotate(18deg);
+        transform: rotate(18deg);
+      }
+
+      16% {
+        -webkit-transform: rotate(-22deg);
+        transform: rotate(-22deg);
+      }
+
+      20% {
+        -webkit-transform: rotate(22deg);
+        transform: rotate(22deg);
+      }
+
+      32% {
+        -webkit-transform: rotate(-12deg);
+        transform: rotate(-12deg);
+      }
+
+      36% {
+        -webkit-transform: rotate(12deg);
+        transform: rotate(12deg);
+      }
+
+      40%,
+      100% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+    }
+
+    @-webkit-keyframes fa-spin {
+      0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+
+      100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes fa-spin {
+      0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+
+      100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+
+    .fa-rotate-90 {
+      -webkit-transform: rotate(90deg);
+      transform: rotate(90deg);
+    }
+
+    .fa-rotate-180 {
+      -webkit-transform: rotate(180deg);
+      transform: rotate(180deg);
+    }
+
+    .fa-rotate-270 {
+      -webkit-transform: rotate(270deg);
+      transform: rotate(270deg);
+    }
+
+    .fa-flip-horizontal {
+      -webkit-transform: scale(-1, 1);
+      transform: scale(-1, 1);
+    }
+
+    .fa-flip-vertical {
+      -webkit-transform: scale(1, -1);
+      transform: scale(1, -1);
+    }
+
+    .fa-flip-both,
+    .fa-flip-horizontal.fa-flip-vertical {
+      -webkit-transform: scale(-1, -1);
+      transform: scale(-1, -1);
+    }
+
+    .fa-rotate-by {
+      -webkit-transform: rotate(var(--fa-rotate-angle, none));
+      transform: rotate(var(--fa-rotate-angle, none));
+    }
+
+    .fa-stack {
+      display: inline-block;
+      vertical-align: middle;
+      height: 2em;
+      position: relative;
+      width: 2.5em;
+    }
+
+    .fa-stack-1x,
+    .fa-stack-2x {
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: var(--fa-stack-z-index, auto);
+    }
+
+    .svg-inline--fa.fa-stack-1x {
+      height: 1em;
+      width: 1.25em;
+    }
+
+    .svg-inline--fa.fa-stack-2x {
+      height: 2em;
+      width: 2.5em;
+    }
+
+    .fa-inverse {
+      color: var(--fa-inverse, #fff);
+    }
+
+    .sr-only,
+    .fa-sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border-width: 0;
+    }
+
+    .sr-only-focusable:not(:focus),
+    .fa-sr-only-focusable:not(:focus) {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border-width: 0;
+    }
+
+    .svg-inline--fa .fa-primary {
+      fill: var(--fa-primary-color, currentColor);
+      opacity: var(--fa-primary-opacity, 1);
+    }
+
+    .svg-inline--fa .fa-secondary {
+      fill: var(--fa-secondary-color, currentColor);
+      opacity: var(--fa-secondary-opacity, 0.4);
+    }
+
+    .svg-inline--fa.fa-swap-opacity .fa-primary {
+      opacity: var(--fa-secondary-opacity, 0.4);
+    }
+
+    .svg-inline--fa.fa-swap-opacity .fa-secondary {
+      opacity: var(--fa-primary-opacity, 1);
+    }
+
+    .svg-inline--fa mask .fa-primary,
+    .svg-inline--fa mask .fa-secondary {
+      fill: black;
+    }
+
+    .fad.fa-inverse,
+    .fa-duotone.fa-inverse {
+      color: var(--fa-inverse, #fff);
+    }
+  </style>
+  <link rel="icon" href="https://solutrend.com/favicon.ico">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#000000">
+  <link rel="apple-touch-icon" href="https://solutrend.com/logo192.png">
+  <link rel="manifest" href="https://solutrend.com/manifest.json">
+  <title data-rh="data-rh">Solutrend</title>
+  <meta data-rh="true" property="og:type" content="website">
+  <meta data-rh="true" name="twitter:card" content="summary_large_image">
+  <meta data-rh="true" property="op:markup_version" content="v1.0">
+  <link href="https://solutrend.com/static/css/main.db5cc0dc.css" rel="stylesheet">
+  <link rel="canonical" href="https://solutrend.com/store/Solutrend" data-rh="true">
+  <meta name="description" content="Explore the best app that solve your problem and save your time! " data-rh="true">
+  <meta property="og:title" content="Solutrend" data-rh="true">
+  <meta property="og:description" content="Explore the best app that solve your problem and save your time! "
+    data-rh="true">
+  <meta property="og:image"
+    content="https://pqfiwahrarbivadfpoix.supabase.co/storage/v1/object/public/logos/20230619T143033460Z387518"
+    data-rh="true">
+  <meta property="og:url" content="https://solutrend.com/store/Solutrend" data-rh="true">
+  <meta name="twitter:title" content="Solutrend" data-rh="true">
+  <meta name="twitter:description" content="Explore the best app that solve your problem and save your time! "
+    data-rh="true">
+  <meta name="twitter:image"
+    content="https://pqfiwahrarbivadfpoix.supabase.co/storage/v1/object/public/logos/20230619T143033460Z387518"
+    data-rh="true">
+  <meta itemprop="name" content="Solutrend" data-rh="true">
+  <meta itemprop="description" content="Explore the best app that solve your problem and save your time! "
+    data-rh="true">
+  <meta itemprop="image"
+    content="https://pqfiwahrarbivadfpoix.supabase.co/storage/v1/object/public/logos/20230619T143033460Z387518"
+    data-rh="true">
+  <meta property="linkedin:title" content="Solutrend" data-rh="true">
+  <meta property="linkedin:description" content="Explore the best app that solve your problem and save your time! "
+    data-rh="true">
+  <meta property="linkedin:image"
+    content="https://pqfiwahrarbivadfpoix.supabase.co/storage/v1/object/public/logos/20230619T143033460Z387518"
+    data-rh="true">
+  <meta property="linkedin:url" content="https://solutrend.com/store/Solutrend" data-rh="true">
+</head>
+
+<body><noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root">
+    <div class="App">
+      <div>
+        <div class="appPageContainer">
+          <div class="toast-container" style="display: none; background-color: red;"><svg aria-hidden="true"
+              focusable="false" data-prefix="fas" data-icon="circle-exclamation"
+              class="svg-inline--fa fa-circle-exclamation fa-shake fa-xl " role="img" xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512" style="margin-left: 20px;">
+              <path fill="currentColor"
+                d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm0-384c13.3 0 24 10.7 24 24V264c0 13.3-10.7 24-24 24s-24-10.7-24-24V152c0-13.3 10.7-24 24-24zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z">
+              </path>
+            </svg>
+            <p class="message"></p>
+          </div>
+          <header class="headery">
+            <div class="logo"><img src="/assets/images/logo512.png" alt="W">SoluTrend</div>
+            <div class="navigation"><a class="link-home" href="/"> <img src="https://solutrend.com/logo192.png" alt="r"
+                  class="small-logo"></a><a class="link" href="/blog">blog</a><a href="/#pricing"
+                class="link">pricing</a>
+              <div class="submitButton">
+                <div class="linkBtn">list your app</div>
+              </div>
+              <div class="link-join">Join</div>
+              <div class="dropdown"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars"
+                  class="svg-inline--fa fa-bars fa-lg dropButton" role="img" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512" cursor="pointer">
+                  <path fill="currentColor"
+                    d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z">
+                  </path>
+                </svg>
+                <div class="dropdown-content"><a href="/dashboard"><svg aria-hidden="true" focusable="false"
+                      data-prefix="fas" data-icon="table-cells" class="svg-inline--fa fa-table-cells " role="img"
+                      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                      <path fill="currentColor"
+                        d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm88 64v64H64V96h88zm56 0h88v64H208V96zm240 0v64H360V96h88zM64 224h88v64H64V224zm232 0v64H208V224h88zm64 0h88v64H360V224zM152 352v64H64V352h88zm56 0h88v64H208V352zm240 0v64H360V352h88z">
+                      </path>
+                    </svg><span class="link-t">Dashboard</span></a><a href="/settings"><svg aria-hidden="true"
+                      focusable="false" data-prefix="fas" data-icon="gear" class="svg-inline--fa fa-gear " role="img"
+                      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                      <path fill="currentColor"
+                        d="M495.9 166.6c3.2 8.7 .5 18.4-6.4 24.6l-43.3 39.4c1.1 8.3 1.7 16.8 1.7 25.4s-.6 17.1-1.7 25.4l43.3 39.4c6.9 6.2 9.6 15.9 6.4 24.6c-4.4 11.9-9.7 23.3-15.8 34.3l-4.7 8.1c-6.6 11-14 21.4-22.1 31.2c-5.9 7.2-15.7 9.6-24.5 6.8l-55.7-17.7c-13.4 10.3-28.2 18.9-44 25.4l-12.5 57.1c-2 9.1-9 16.3-18.2 17.8c-13.8 2.3-28 3.5-42.5 3.5s-28.7-1.2-42.5-3.5c-9.2-1.5-16.2-8.7-18.2-17.8l-12.5-57.1c-15.8-6.5-30.6-15.1-44-25.4L83.1 425.9c-8.8 2.8-18.6 .3-24.5-6.8c-8.1-9.8-15.5-20.2-22.1-31.2l-4.7-8.1c-6.1-11-11.4-22.4-15.8-34.3c-3.2-8.7-.5-18.4 6.4-24.6l43.3-39.4C64.6 273.1 64 264.6 64 256s.6-17.1 1.7-25.4L22.4 191.2c-6.9-6.2-9.6-15.9-6.4-24.6c4.4-11.9 9.7-23.3 15.8-34.3l4.7-8.1c6.6-11 14-21.4 22.1-31.2c5.9-7.2 15.7-9.6 24.5-6.8l55.7 17.7c13.4-10.3 28.2-18.9 44-25.4l12.5-57.1c2-9.1 9-16.3 18.2-17.8C227.3 1.2 241.5 0 256 0s28.7 1.2 42.5 3.5c9.2 1.5 16.2 8.7 18.2 17.8l12.5 57.1c15.8 6.5 30.6 15.1 44 25.4l55.7-17.7c8.8-2.8 18.6-.3 24.5 6.8c8.1 9.8 15.5 20.2 22.1 31.2l4.7 8.1c6.1 11 11.4 22.4 15.8 34.3zM256 336a80 80 0 1 0 0-160 80 80 0 1 0 0 160z">
+                      </path>
+                    </svg><span class="link-t">Settings</span></a><a href="/saved"><svg aria-hidden="true"
+                      focusable="false" data-prefix="fas" data-icon="bookmark" class="svg-inline--fa fa-bookmark "
+                      role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                      <path fill="currentColor"
+                        d="M0 48V487.7C0 501.1 10.9 512 24.3 512c5 0 9.9-1.5 14-4.4L192 400 345.7 507.6c4.1 2.9 9 4.4 14 4.4c13.4 0 24.3-10.9 24.3-24.3V48c0-26.5-21.5-48-48-48H48C21.5 0 0 21.5 0 48z">
+                      </path>
+                    </svg><span class="link-t">Saved</span> </a><a href="/store/Solutrend"><svg aria-hidden="true"
+                      focusable="false" data-prefix="fas" data-icon="moon" class="svg-inline--fa fa-moon " role="img"
+                      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                      <path fill="currentColor"
+                        d="M223.5 32C100 32 0 132.3 0 256S100 480 223.5 480c60.6 0 115.5-24.2 155.8-63.4c5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6c-96.9 0-175.5-78.8-175.5-176c0-65.8 36-123.1 89.3-153.3c6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z">
+                      </path>
+                    </svg><span class="link-t">dark</span> </a></div>
+              </div>
+            </div>
+          </header><img class="imageApp"
+            src="https://pqfiwahrarbivadfpoix.supabase.co/storage/v1/object/public/screenshots/20230619T143030007Z351739"
+            alt="something error sory " style="background-color: grey;">
+          <div class="buttons">
+            <div class="visit"><span class="icony"><svg aria-hidden="true" focusable="false" data-prefix="fas"
+                  data-icon="link" class="svg-inline--fa fa-link " role="img" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 640 512" color="#000">
+                  <path fill="currentColor"
+                    d="M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z">
+                  </path>
+                </svg></span>Visit App Website</div>
+            <div class="favorite"><span class="icony"><svg aria-hidden="true" focusable="false" data-prefix="fas"
+                  data-icon="bookmark" class="svg-inline--fa fa-bookmark " role="img" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 384 512" color="#000">
+                  <path fill="currentColor"
+                    d="M0 48V487.7C0 501.1 10.9 512 24.3 512c5 0 9.9-1.5 14-4.4L192 400 345.7 507.6c4.1 2.9 9 4.4 14 4.4c13.4 0 24.3-10.9 24.3-24.3V48c0-26.5-21.5-48-48-48H48C21.5 0 0 21.5 0 48z">
+                  </path>
+                </svg></span>Save this app</div>
+            <div class="message"><span class="icony"><svg aria-hidden="true" focusable="false" data-prefix="fas"
+                  data-icon="envelope" class="svg-inline--fa fa-envelope " role="img" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512" color="#000">
+                  <path fill="currentColor"
+                    d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z">
+                  </path>
+                </svg></span>Send Message</div>
+          </div>
+          <div class="content">
+            <div class="appInfo">
+              <h4 class="appName">Solutrend</h4>
+              <h6 class="whats">whats Solutrend ?</h6>
+              <div class="whatsThis">App Discovery platform </div>
+              <h6 class="why">why to use Solutrend ?</h6>
+              <div class="why">Explore the best app that solve your problem and save your time! </div>
+              <h6 class="whoUse">who need Solutrend ?</h6>
+              <div class="whoUse">Business owners developers founders entrepreneurs</div>
+              <div class="share-to">share to</div>
+              <div class="share-links">
+                <div class="btn-link-social">facebook</div>
+                <div class="btn-link-social">twitter</div>
+                <div class="btn-link-social">linkedin</div>
+              </div>
+            </div>
+            <div class="ContentRight">
+              <div class="pricePart">
+                <div class="pricingMOdel">Pricing model</div>
+                <div class="free">free plan ✔</div>
+                <div class="subscription">Subscription ✘</div>
+                <div class="freeTrial">free trial ✘</div>
+              </div>
+              <div>
+                <div class="startingPrice">
+                  <div class="startAt">Price starts from</div>
+                  <div class="price"><span>0 </span>$month</div>
+                </div>
+                <div></div>
+                <div class="review">Submit a Review</div>
+                <div class="report">report this app</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="reviewPart"></div>
+        <div class="suggestion">
+          <h4>Discover more :</h4>
+          <div class="suggestCards">
+            <div class="newCard"><img
+                src="https://pqfiwahrarbivadfpoix.supabase.co/storage/v1/object/public/screenshots/20230619T143030007Z351739"
+                alt="" class="newCardImage">
+              <div class="gradnt">
+                <h2>Solutrend</h2>
+              </div>
+              <h5 class="newCardH5">Explore the best app that solve your problem and save your time! </h5>
+            </div>
+          </div>
+        </div>
+        <div class="stick" id="myBtn">
+          <div class="stickButton" style="display: none;"><span class="icony"><svg aria-hidden="true" focusable="false"
+                data-prefix="fas" data-icon="link" class="svg-inline--fa fa-link " role="img"
+                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" color="#000">
+                <path fill="currentColor"
+                  d="M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z">
+                </path>
+              </svg></span>Visit App Website</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
