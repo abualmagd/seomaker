@@ -4,11 +4,11 @@ const puppeteer = require("puppeteer");
 const fs = require('fs');
 const Client = require('ftp');
 
-async function screenShot() {
+async function screenShot(tool) {
   const browser = await puppeteer.launch({ headless: 'new' });
   const page = await browser.newPage();
 
-  const url = 'https://www.solutrend.com/store/Hostinger';
+  const url = 'https://www.solutrend.com/store/' + tool;
   await page.goto(url, {
     waitUntil: 'networkidle0',
     timeout: 600000 // 1 minute
@@ -39,7 +39,7 @@ async function screenShot() {
   // Save clean HTML  
   fs.writeFileSync("myshots/hostinger.html", cleanHtml);
 
-  // Upload to FTP server
+  // Upload to FTP server to shots 
   const c = new Client();
   c.connect({
     host: 'ftp.solutrend.com',
@@ -49,7 +49,7 @@ async function screenShot() {
 
 
   c.on('ready', function () {
-    c.put("myshots/hostinger.html", `hostinger.html`, function (err) {
+    c.put("myshots/hostinger.html", `${tool}.html`, function (err) {
       if (err) throw err;
       c.end();
       console.log('file uploaded');
@@ -57,7 +57,6 @@ async function screenShot() {
 
     });
   });
-
 
 
 

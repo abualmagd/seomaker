@@ -38,11 +38,11 @@ async function shotArticle(title) {
     // Save clean HTML  
     fs.writeFileSync(`myshots/${title}.html`, cleanHtml);
 
-    // Upload to FTP server
+    // Upload to FTP server on article shots 
     const c = new Client();
     c.connect({
         host: 'ftp.solutrend.com',
-        user: 'u917118114.ismail89',
+        user: 'u917118114.ismail',
         password: 'Ismail#89118911'
     });
 
@@ -56,7 +56,6 @@ async function shotArticle(title) {
 
         });
     });
-
 
 
 

@@ -4,6 +4,7 @@
   "description": "",
   "main": "server.js",
   "dependencies": {
+    "@supabase/supabase-js": "^2.26.0",
     "accepts": "^1.3.8",
     "acorn": "^8.9.0",
     "acorn-walk": "^8.2.0",
@@ -40,6 +41,7 @@
     "depd": "^2.0.0",
     "destroy": "^1.2.0",
     "devtools-protocol": "^0.0.1135028",
+    "dotenv": "^16.3.1",
     "ee-first": "^1.1.1",
     "emoji-regex": "^8.0.0",
     "encodeurl": "^1.0.2",
@@ -136,6 +138,7 @@
     "serve-static": "^1.15.0",
     "setprototypeof": "^1.2.0",
     "side-channel": "^1.0.4",
+    "sitemap": "^7.1.1",
     "smart-buffer": "^4.2.0",
     "socks": "^2.7.1",
     "socks-proxy-agent": "^8.0.1",
